@@ -1,0 +1,38 @@
+body {
+    /* format */
+    min-height: 100vh;
+    font-size: 2vw;
+    /* arrange */
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: center; */
+}
+
+#header {
+    /* format */
+    font-size: 1rem;
+    padding: 20px 30px;
+    background-color: rgb(0, 217, 255);
+    /* arrange */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header input {
+    display: none;
+}
+
+#header label {
+    /* Format */
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+}
+
+#header label:hover {
+    cursor: pointer;
+}
