@@ -16,17 +16,61 @@
             <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
         </div>
         <!-- nav-bar for mobile and table -->
-        <div>
-            <!-- START -->
-            <input type="checkbox" name="checkbox" id="nav-bar">
-            <label for="nav-bar">
+        <!-- START -->
+        <input type="checkbox" name="checkbox" id="nav-button">
+        <label for="nav-button" class="side-bar-button">
+            <svg>
+                <use xlink:href="img/icon/bar-icon.svg#bar" />
+            </svg>
+        </label>
+        <section class="menu">
+            <div class="feature">
+                <a href="#">
+                    <svg>
+                        <use xlink:href="img/icon/search.svg#search" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg>
+                        <use xlink:href="img/icon/shop-cart.svg#shop-cart" />
+                    </svg>
+                </a>
+            </div>
+            <div class="logo">
+                <a href="index.html" alt="Our logo"><img src="img/logo.png" alt="Our logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="phone">
                 <svg>
-                    <use xlink:href="img/icon/bar-icon.svg#bar"></use>
+                    <use xlink:href="img/icon/mobile-phone.svg#mobile" />
                 </svg>
-            </label>
-            <!-- END -->
-        </div>
-
+                <span>(+123) 4567-7890-123</span>
+            </div>
+            <div class="schedule">
+                <svg>
+                    <use xlink:href="img/icon/clock.svg#clock" />
+                </svg>
+                <span>Mon-Sat: 10:00 - 16:00 / Sunday Close</span>
+            </div>
+            <div class="social">
+                <a href="#">Find us on map &rarr;</a>
+                <div>
+                    <a href="#"><svg><use xlink:href="img/icon/facebook.svg#facebook" /></svg></a>
+                    <a href="#"><svg><use xlink:href="img/icon/twitter.svg#twitter" /></svg></a>
+                    <a href="#"><svg><use xlink:href="img/icon/vimeo.svg#vimeo" /></svg></a>
+                    <a href="#"><svg><use xlink:href="img/icon/pinterest.svg#pinterest" /></svg></a>
+                </div>
+            </div>
+        </section>
+        <!-- END -->
         
     </header>
 </body>
