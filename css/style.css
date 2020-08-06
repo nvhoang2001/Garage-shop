@@ -15,6 +15,26 @@ body {
     flex-flow: column wrap;
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Header */
+
 #header {
     /* format */
     padding: 20px 30px;
@@ -104,6 +124,8 @@ div.feature {
     fill: var(--social-color);
 }
 
+/* Header Image */
+
 .header-image {
     /* Size */
     height: 100vh;
@@ -128,12 +150,9 @@ div.feature {
     padding: 0 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    line-height: 1.2;
-}
-
 .container h2 {
     font-size: 3rem;
+    font-weight: 400;
 }
 
 .container h1 {
@@ -143,6 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container h3 {
     font-size: 1.55rem;
+    font-weight: 400;
     margin: 1rem 0;
 }
 
@@ -153,7 +173,50 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgb(10, 109, 190);
 }
 
-
 .container button:hover {
     background-color: rgb(19, 198, 243);
+}
+
+/* Services */
+.services {
+    display: flex;
+    flex-direction: column;
+}
+
+.services header {
+    /* Sizing */
+    height: 40vh;
+    /* Arrange items */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Align text */
+    text-align: center;
+}
+
+.services header, .services .services-text {
+    padding: 2rem;
+}
+
+.service-details {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-details .services-text {
+    height: 35vh;
+}
+
+.services-text img {
+    margin-bottom: 1rem;
+}
+
+.services-text h2 {
+    margin: 1rem 0;
+}
+
+.service-details .service-img {
+    height: 65vh;
 }
