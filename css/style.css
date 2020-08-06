@@ -4,12 +4,15 @@
     --backgrond-side-bar: rgb(255, 255, 255);
     --social-color: rgb(43, 43, 43);
     --header-image-color: rgb(255, 255, 255);
+    --black: rgb(22, 21, 21);
+    --trans-gray: rgba(105, 105, 105, 0.87);
 }
 
 body {
     /* format */
     font-size: 1.25rem;
     font-weight: 500;
+    font-family: 'Lato', sans-serif;
     /* arrange */
     display: flex;
     flex-flow: column wrap;
@@ -143,7 +146,6 @@ div.feature {
 
 .container {
     /* Font setting */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--header-image-color);
     /* Align text */
     margin: 0 auto;
@@ -166,14 +168,14 @@ div.feature {
     margin: 1rem 0;
 }
 
-.container button {
+button {
     font-weight: 500;
     margin: 1.5rem 0;
     padding: 0.75rem 1.2rem;
     background-color: rgb(10, 109, 190);
 }
 
-.container button:hover {
+button:hover {
     background-color: rgb(19, 198, 243);
 }
 
@@ -181,11 +183,12 @@ div.feature {
 .services {
     display: flex;
     flex-direction: column;
+    padding: 10vh 0;
 }
 
 .services header {
     /* Sizing */
-    height: 40vh;
+    height: 30vh;
     /* Arrange items */
     display: flex;
     flex-direction: column;
@@ -219,4 +222,61 @@ div.feature {
 
 .service-details .service-img {
     height: 65vh;
+}
+
+/* Choose us */
+.choose-us {
+    padding: 3rem 0;
+    /* Font setting */
+    font-size: 1.05rem;
+}
+.choose-us-pic {
+    height: 80vh;
+    background-image: url("../img/services/details/service-details.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.choose-us > div:last-child {
+    padding: 4rem 2rem;
+    height: 100vh;
+}
+
+.choose-us h1 {
+    font-size: 2.6rem;
+    color: var(--black);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.choose-us p {
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: var(--trans-gray);
+    margin-bottom: 3rem;
+}
+
+.choose-us ul {
+    list-style: none;
+    font-weight: 500;
+} 
+/* Set the list style */
+.choose-us ul li::before{
+    content: '\2714\0020';
+    color: rgb(20, 144, 175);
+    margin-right: 0.5rem;
+} 
+
+.choose-us li {
+    margin: 1rem 0;
+    line-height: 1.8rem;
+}
+
+.choose-us button {
+    font-size: 1rem;
+    color: var(--header-image-color);
+    padding: 1rem 2.2rem;
+    border-radius: 0.25rem;
 }
