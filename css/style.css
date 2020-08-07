@@ -6,6 +6,7 @@
     --header-image-color: rgb(255, 255, 255);
     --black: rgb(22, 21, 21);
     --trans-gray: rgba(105, 105, 105, 0.87);
+    --sp-trans-gray: rgba(105, 105, 105, 0.26);
 }
 
 body {
@@ -229,6 +230,7 @@ button:hover {
     padding: 3rem 0;
     /* Font setting */
     font-size: 1.05rem;
+    box-shadow: 0 1rem 1rem -1px var(--sp-trans-gray);
 }
 .choose-us-pic {
     height: 80vh;
