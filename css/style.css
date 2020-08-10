@@ -282,3 +282,59 @@ button:hover {
     padding: 1rem 2.2rem;
     border-radius: 0.25rem;
 }
+
+.products {
+    font-size: 1.2rem;
+}
+
+.products > header {
+    height: 15rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products > header > p, .products ul {
+    color: var(--trans-gray);
+}
+
+.products > header > p {
+    line-height: 1.8rem;
+}
+
+.products > .product-area {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.product-area > .product-item {
+    position: relative;
+    margin: 0.5rem;
+}
+
+.product-item ul {
+    width: 2rem;
+    /* Position list */
+    position: absolute;
+    top: 0;
+    right: 0%;
+}
+
+
+
+.product-item  li {
+    width: 1rem;
+    /* Arrange list item */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.6rem;
+    padding: 0.25rem;
+}
+
+.product-item li:first-child, .product-item li:nth-child(2) {
+    border-bottom: 1px solid var(--sp-trans-gray);
+}
