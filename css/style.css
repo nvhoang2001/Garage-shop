@@ -232,6 +232,7 @@ button:hover {
     font-size: 1.05rem;
     box-shadow: 0 1rem 1rem -1px var(--sp-trans-gray);
 }
+
 .choose-us-pic {
     height: 80vh;
     background-image: url("../img/services/details/service-details.jpg");
@@ -315,15 +316,31 @@ button:hover {
     margin: 0.5rem;
 }
 
-.product-item ul {
-    width: 2rem;
-    /* Position list */
-    position: absolute;
-    top: 0;
-    right: 0%;
+.product-item > figure > div {
+    margin-bottom: 1rem;
 }
 
+.product-item:hover > figure > div {
+    box-shadow: 0 0 1rem 10px rgba(158, 158, 158, 0.05);
+}
 
+.product-item ul {
+    width: 2rem;
+    box-shadow: 0 0 0.5rem 2px rgba(105, 105, 105, 0.1);
+    /* Position list */
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    /* Transition */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    /* Center items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 
 .product-item  li {
     width: 1rem;
@@ -331,10 +348,49 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.6rem;
-    padding: 0.25rem;
+    /*  */
+    font-size: 0.5rem;
+    padding: 0.5rem;
+
 }
 
 .product-item li:first-child, .product-item li:nth-child(2) {
     border-bottom: 1px solid var(--sp-trans-gray);
+}
+
+.product-item .hover-item a {
+    text-decoration-line: underline;
+    color: rgb(33, 69, 230);
+}
+
+.testimonia {
+    margin: 1rem;
+    padding: 1rem 5rem 10rem 1rem;
+    display: flex;
+    background-color: #fff;
+    font-size: 2rem;
+    font-style: italic;
+    position: relative;
+    top: 10rem;
+    /* border: 5px solid red; */
+}
+
+.testimonia div::before {
+    content: "\201D";
+    font-size: 5rem;
+    color: turquoise;
+}
+
+.testimonia div {
+    margin-right: 3rem;
+}
+
+.testimonia q {
+    margin: 1rem;
+    quotes: "\201C" "\201D";
+}
+
+.footer {
+    height: 30vh;
+    background-color: #000;
 }
