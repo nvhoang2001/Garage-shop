@@ -364,6 +364,7 @@ button:hover {
     color: rgb(33, 69, 230);
 }
 
+/* Testimonia */
 .testimonia {
     margin: 1rem;
     padding: 1rem 5.5rem 10rem 1rem;
@@ -392,6 +393,7 @@ button:hover {
     quotes: "\201C" "\201D";
 }
 
+/* Statistic */
 .statistic {
     padding: 15rem 0 5rem 0;
     background-image: url("../img/counter-bg.jpg");
@@ -429,4 +431,62 @@ button:hover {
 .statistic > .counter p {
     font-size: 1rem;
     font-weight: 600;
+}
+
+/* New */
+
+.news {
+    margin: 2rem 1rem;
+    font-size: 1rem;
+    color: var(--trans-gray);
+}
+
+.news h1, .news h3 {
+    color: black;
+}
+
+.news > header {
+    text-align: center;
+    margin: 3rem 1.25rem;
+}
+
+.news > header p {
+    line-height: 1.6;
+}
+
+.news .article-img {
+    height: 13rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.news .article-content {
+    margin: 0 0 2rem 1.5rem;
+}
+
+.news .article-content > .properties {
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    display: inline-block;
+    /* Position author and time infomation */
+    position: relative;
+    top: -1rem;
+}
+
+.news .article-content > h3 {
+    margin-bottom: 2rem;
+}
+
+.news .article-content > a::before {
+    content:"\2014 ";
+    font-size: 2rem;
+    color: var(--light-blue);
+    position: relative;
+    top: 0.25rem;
+}
+
+.news .article-content > a {
+    display: inline-block;
+    margin: 2rem 0;
 }
