@@ -7,6 +7,7 @@
     --black: rgb(22, 21, 21);
     --trans-gray: rgba(105, 105, 105, 0.87);
     --sp-trans-gray: rgba(105, 105, 105, 0.26);
+    --light-blue: rgb(44, 139, 248);
 }
 
 body {
@@ -365,7 +366,7 @@ button:hover {
 
 .testimonia {
     margin: 1rem;
-    padding: 1rem 5rem 10rem 1rem;
+    padding: 1rem 5.5rem 10rem 1rem;
     display: flex;
     background-color: #fff;
     font-size: 2rem;
@@ -377,8 +378,9 @@ button:hover {
 
 .testimonia div::before {
     content: "\201D";
-    font-size: 5rem;
-    color: turquoise;
+    font-size: 3em;
+    font-family: serif;
+    color: rgb(64, 147, 224);
 }
 
 .testimonia div {
@@ -390,7 +392,41 @@ button:hover {
     quotes: "\201C" "\201D";
 }
 
-.footer {
-    height: 30vh;
-    background-color: #000;
+.statistic {
+    padding: 15rem 0 5rem 0;
+    background-image: url("../img/counter-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.statistic > header {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.statistic > header > p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.statistic .counter {
+    margin: 2rem 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.statistic > .counter img {
+    margin-right: 1rem;
+}
+
+.statistic > .counter h1 {
+    font-size: 3rem;
+    color: var(--light-blue);
+}
+
+.statistic > .counter p {
+    font-size: 1rem;
+    font-weight: 600;
 }
