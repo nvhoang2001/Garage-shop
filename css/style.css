@@ -10,6 +10,11 @@
     --trans-gray: rgba(105, 105, 105, 0.87);
     --sp-trans-gray: rgba(105, 105, 105, 0.26);
     --light-blue: rgb(44, 139, 248);
+    --dark-gray: rgb(46, 46, 46);
+    --fb-icon-background: #324974;
+    --tw-icon-background: #2c85ae;
+    --vimeo-icon-background: #dc4337;
+    --pinterest-icon-background: #3eaff0;
 }
 
 body {
@@ -46,7 +51,7 @@ h3 {
     /* format */
     padding: 20px 30px;
     color: var(--header-font-color);
-    background-color: rgb(0, 217, 255);
+    background-color: rgb(255, 255, 255);
     /* arrange */
     display: flex;
     flex-flow: row nowrap;
@@ -120,7 +125,7 @@ div.feature {
     font-size: 0.7rem;
     /* Formatting */
     padding-right: 0.7em;
-    fill: rgb(10, 152, 177);
+    fill: var(--button-color);
 }
 
 .social svg {
@@ -617,4 +622,55 @@ button:hover {
 .office p {
     color: var(--gray);
     line-height: 1.4rem;
+}
+
+/* Copyright */
+
+.copyright {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--gray);
+    background-color: var(--dark-gray);
+    padding: 1rem 1.5rem;
+}
+
+.copyright p {
+    line-height: 1.8;
+}
+
+.copyright span {
+    color: red;
+    font-size: 0.5rem;
+}
+
+.copyright p a {
+    color: var(--button-color);
+}
+
+.social-footer {
+    margin-top: 1.3rem; 
+}
+
+.social-footer svg {
+    font-size: 0.55rem;
+    border-radius: 50%;
+    padding: 0.4rem;
+    margin: 0 0.2rem;
+    color: white;
+}
+
+#fb {
+    background-color: var(--fb-icon-background);
+}
+
+#tw {
+    background-color: var(--tw-icon-background);
+}
+
+#vime {
+    background-color: var(--vimeo-icon-background);
+}
+
+#pin {
+    background-color: var(--pinterest-icon-background);
 }
