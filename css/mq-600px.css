@@ -1,13 +1,10 @@
 @media screen and (min-width: 600px) {
     /* Header */
     #header {
-        padding-left: 15vw;
-        padding-right: 15vw;
+        margin-left: 50px; 
+        margin-right: 50px; 
     }
 
-    .menu {
-        width: 45vw;
-    }
 
     
 
