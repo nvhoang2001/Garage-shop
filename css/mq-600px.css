@@ -1,11 +1,81 @@
 @media screen and (min-width: 600px) {
     /* Header */
     #header {
-        margin-left: 50px; 
-        margin-right: 50px; 
+        margin: 19px 7%;
     }
 
+    #header > .side-bar-button {
+        width: 35px;
+        height: 35px;
+        padding: 3px;
+    }
 
-    
+    #header > label > svg {
+        width: 100%;
+        height: 100%;
+    }
 
+    .menu {
+        color: rgb(12, 12, 12);
+    }
+
+    /* Header Image */
+    .header-image {
+        height: 650px;
+    }
+
+    .container {
+        max-width: 85%;
+    }
+
+    .container > h1 {
+        font-weight: bolder;
+    }
+    .container > h2 {
+        font-size: 2.5rem;
+        font-weight: 450;
+    }
+
+    .container > h3 {
+        font-size: 1.5rem;
+        font-weight: 550;
+    }
+
+    .container > button {
+        padding: 1rem 1.75rem;
+        font-size: 0.9rem;
+        font-weight: 800;
+    }
+
+    /* Service */
+
+    .services > .intro{
+        margin-top: 45px;
+        margin-bottom: 40px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .service-details {
+        height: 630px;
+        padding: 20px 23px;
+        justify-content: space-between;
+    }
+
+    .service-details .services-text {
+        height: 200px;
+        padding: 0 30px;
+    }
+
+    .services-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .services-text p {
+        font-size: 1rem;
+    }
+
+    .service-details .service-img {
+        height: 400px;
+    }
 }    

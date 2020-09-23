@@ -199,6 +199,11 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 10vh 0;
+    color: var(--trans-gray);
+}
+
+.services h1, .services h2 {
+    color: var(--black);
 }
 
 .services header {
@@ -237,6 +242,7 @@ button:hover {
 
 .service-details .service-img {
     height: 65vh;
+    
 }
 
 /* Choose us */
