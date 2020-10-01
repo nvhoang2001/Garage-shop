@@ -45,7 +45,7 @@ h3 {
     font-size: 1.5rem;
 }
 
-/* Header */
+/* Header section*/
 
 #header {
     /* format */
@@ -141,7 +141,7 @@ div.feature {
     fill: var(--social-color);
 }
 
-/* Header Image */
+/* Header Image section*/
 
 .header-image {
     /* Size */
@@ -194,7 +194,7 @@ button:hover {
     background-color: rgb(19, 198, 243);
 }
 
-/* Services */
+/* Services section*/
 .services {
     display: flex;
     flex-direction: column;
@@ -245,7 +245,7 @@ button:hover {
     
 }
 
-/* Choose us */
+/* Choose us section*/
 .choose-us {
     padding: 3rem 0;
     /* Font setting */
@@ -262,8 +262,8 @@ button:hover {
     background-attachment: scroll;
 }
 
-.choose-us > div:last-child {
-    padding: 4rem 2rem;
+.choose-us-pic + div {
+    padding: 4rem 2rem 1rem 2rem;
     height: 100vh;
 }
 
@@ -305,6 +305,7 @@ button:hover {
     border-radius: 0.25rem;
 }
 
+/* Product section */
 .products {
     font-size: 1.2rem;
 }
@@ -326,13 +327,13 @@ button:hover {
     line-height: 1.8rem;
 }
 
-.products > .product-area {
+.product-area {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.product-area > .product-item {
+.product-item {
     position: relative;
     margin: 0.5rem;
 }
@@ -379,12 +380,21 @@ button:hover {
     border-bottom: 1px solid var(--sp-trans-gray);
 }
 
-.product-item .hover-item a {
+.hover-item > ul {
+    background-color: #fff;
+}
+
+.hover-item a {
     text-decoration-line: underline;
     color: rgb(33, 69, 230);
 }
 
-/* Testimonia */
+.item-price {
+    margin: 0.5rem;
+    font-weight: 600;
+}
+
+/* Testimonia section*/
 .testimonia {
     margin: 1rem;
     padding: 1rem 5.5rem 10rem 1rem;
@@ -413,7 +423,7 @@ button:hover {
     quotes: "\201C" "\201D";
 }
 
-/* Statistic */
+/* Statistic section*/
 .statistic {
     padding: 15rem 0 5rem 0;
     background-image: url("../img/counter-bg.jpg");
@@ -433,27 +443,27 @@ button:hover {
     line-height: 1.6rem;
 }
 
-.statistic .counter {
+.counter {
     margin: 2rem 1rem;
     display: flex;
     align-items: flex-start;
 }
 
-.statistic > .counter img {
+.counter img {
     margin-right: 1rem;
 }
 
-.statistic > .counter h1 {
+.counter h1 {
     font-size: 3rem;
     color: var(--light-blue);
 }
 
-.statistic > .counter p {
+.counter p {
     font-size: 1rem;
     font-weight: 600;
 }
 
-/* New */
+/* News section*/
 
 .news {
     margin: 2rem 1rem;
@@ -474,18 +484,23 @@ button:hover {
     line-height: 1.6;
 }
 
-.news .article-img {
+.article-img {
     height: 13rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.news .article-content {
+.article-content {
     margin: 0 0 2rem 1.5rem;
 }
 
-.news .article-content > .properties {
+.article-content > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.article-content > .properties {
     padding: 0.5rem 1.5rem;
     background-color: white;
     display: inline-block;
@@ -494,11 +509,11 @@ button:hover {
     top: -1rem;
 }
 
-.news .article-content > h3 {
+.article-content > h3 {
     margin-bottom: 2rem;
 }
 
-.news .article-content > a::before {
+.article-content > a::before {
     content:"\2014 ";
     font-size: 2rem;
     color: var(--light-blue);
@@ -506,13 +521,13 @@ button:hover {
     top: 0.25rem;
 }
 
-.news .article-content > a {
+.article-content > a {
     display: inline-block;
     margin: 2rem 0;
 }
 
 
-/* Footer */
+/* Footer section*/
 .footer-infor {
     /* Background Image */
     background-image: url("../img/footer-bg.jpg");
@@ -536,7 +551,7 @@ button:hover {
     align-items: center;
 }
 
-.footer-contact .items {
+.items {
     display: flex;
     align-items: center;
 }
@@ -635,7 +650,7 @@ button:hover {
     line-height: 1.4rem;
 }
 
-/* Copyright */
+/* Copyright section*/
 
 .copyright {
     font-size: 1rem;

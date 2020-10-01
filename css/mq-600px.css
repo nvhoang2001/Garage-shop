@@ -1,5 +1,5 @@
 @media screen and (min-width: 600px) {
-    /* Header */
+    /* Header bar section*/
     #header {
         margin: 19px 7%;
     }
@@ -19,7 +19,7 @@
         color: rgb(12, 12, 12);
     }
 
-    /* Header Image */
+    /* Header Image section */
     .header-image {
         height: 650px;
     }
@@ -47,7 +47,7 @@
         font-weight: 800;
     }
 
-    /* Service */
+    /* Service section */
 
     .services > .intro{
         margin-top: 45px;
@@ -77,5 +77,92 @@
 
     .service-details .service-img {
         height: 400px;
+    }
+
+    /* Choose us section */
+    .choose-us-pic + div {
+        min-height: 600px;
+        padding: 80px 45px;
+    }    
+
+    .choose-us-pic + div > h1 {
+        font-size: 2.45rem;
+        font-weight: 650;
+        margin-bottom: 0.3rem;
+    }
+
+    .choose-us-pic + div li {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    /* Product section */
+    .products {
+        padding: 0 30px;
+    }
+
+    .products > header > h1 {
+        font-size: 2.35rem;
+    }
+
+    .products p, .products a {
+        font-size: 0.9em;
+    }
+
+    .product-area {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product-item {
+        width: 46%;
+    }
+
+    .product-item img{
+        width: 100%;
+    } 
+
+    .item-name {
+        font-size: 0.9em;
+    }
+
+    /* Testimonia section */
+    .testimonia {
+        margin: 0 50px;
+        padding-bottom: 7rem;
+    }
+
+    .testimonia p {
+        line-height: 3rem;
+    }
+
+    /* Statistic section*/
+    .statistic > div{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    
+    .counter {
+        width: 40%;
+        margin: 1rem 0;
+    }
+
+    /* News section */
+    .news > article {
+        margin: 0 1.25rem;
+    }
+
+    /* footer-infor section */
+    .footer-text {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .slogan, .footer-link, .footer-news, .office {
+        margin: 0;
+        width: 40%;
     }
 }    
