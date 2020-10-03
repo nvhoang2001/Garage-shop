@@ -10,7 +10,7 @@
     --trans-gray: rgba(105, 105, 105, 0.87);
     --sp-trans-gray: rgba(105, 105, 105, 0.26);
     --light-blue: rgb(44, 139, 248);
-    --dark-gray: rgb(46, 46, 46);
+    --dark-gray: #212529;
     --fb-icon-background: #324974;
     --tw-icon-background: #2c85ae;
     --vimeo-icon-background: #dc4337;
@@ -334,10 +334,9 @@ button:hover {
 }
 
 .product-item {
-    border: 1px solid red;
     position: relative;
     margin: 0.5rem;
-    height: 350px;
+    min-height: 350px;
 }
 
 .product-item > figure > div {
@@ -402,19 +401,18 @@ button:hover {
 /* Create a animation for fly in cart */
 @keyframes flyInFromBottom {
     from {
-        bottom: -20%;
+        bottom: 0%;
     }
     to {
-        bottom: -10;
+        bottom: 5%;
     }
 }
 
 .hover-item > a {
-    text-decoration-line: underline;
     color: rgb(33, 69, 230);
     position: absolute;
     right:  40%;
-    bottom: -10%;
+    bottom: 4%;
 
     /* Animation to fly int from bottom */
     animation-name: flyInFromBottom;
@@ -430,11 +428,7 @@ button:hover {
 }
 
 .hover-item {
-    display: none;
-    
-    /* transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out; */
+    display: none;   
 }
 
 .product-item:hover .hover-item {

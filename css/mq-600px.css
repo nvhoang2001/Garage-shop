@@ -4,6 +4,7 @@
         margin: 19px 7%;
     }
 
+    /* Adjust size of button */
     #header > .side-bar-button {
         width: 35px;
         height: 35px;
@@ -118,6 +119,21 @@
     .product-item {
         width: 46%;
     }
+
+    @keyframes flyInFromBottom {
+        from {
+            bottom:-5%;
+        }
+        to {
+            bottom: 2%;
+        }
+    }
+    
+    .hover-item > a {
+        right:  35%;
+        bottom: 2%;
+    }
+    
 
     .product-item img{
         width: 100%;
