@@ -59,6 +59,10 @@ h3 {
     align-items: center;
 }
 
+.header-top {
+    display: none;
+}
+
 #logo img {
     max-width: 100%;
 }
