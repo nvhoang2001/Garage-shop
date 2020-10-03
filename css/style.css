@@ -334,8 +334,10 @@ button:hover {
 }
 
 .product-item {
+    border: 1px solid red;
     position: relative;
     margin: 0.5rem;
+    height: 350px;
 }
 
 .product-item > figure > div {
@@ -346,6 +348,16 @@ button:hover {
     box-shadow: 0 0 1rem 10px rgba(158, 158, 158, 0.05);
 }
 
+/* Create animation for side-bar icon */
+@keyframes flyInFromRight {
+    from {
+        right: -1%;
+    }
+    to {
+        right: 5%;
+    }
+}
+
 .product-item ul {
     width: 2rem;
     box-shadow: 0 0 0.5rem 2px rgba(105, 105, 105, 0.1);
@@ -353,10 +365,13 @@ button:hover {
     position: absolute;
     top: 5%;
     right: 5%;
-    /* Transition */
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: linear;
+    /* Animation */
+    animation-name: flyInFromRight;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+
     /* Center items */
     display: flex;
     flex-direction: column;
@@ -384,15 +399,51 @@ button:hover {
     background-color: #fff;
 }
 
-.hover-item a {
+/* Create a animation for fly in cart */
+@keyframes flyInFromBottom {
+    from {
+        bottom: -20%;
+    }
+    to {
+        bottom: -10;
+    }
+}
+
+.hover-item > a {
     text-decoration-line: underline;
     color: rgb(33, 69, 230);
+    position: absolute;
+    right:  40%;
+    bottom: -10%;
+
+    /* Animation to fly int from bottom */
+    animation-name: flyInFromBottom;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
 }
 
 .item-price {
     margin: 0.5rem;
     font-weight: 600;
 }
+
+.hover-item {
+    display: none;
+    
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; */
+}
+
+.product-item:hover .hover-item {
+    display: block;
+} 
+
+.product-item:hover .item-price {
+    display: none;
+} 
 
 /* Testimonia section*/
 .testimonia {
