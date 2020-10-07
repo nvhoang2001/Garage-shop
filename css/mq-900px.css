@@ -64,20 +64,55 @@
     .header-nav-bar {
         padding: 0 7%;
         width: 100%;
+        height: 10vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     #logo {
         width: 17%;
-        border: 1px solid red;
     }
     .navigatior {
+        display: inline-block;
         width: 63%;
+        height: 100%;
     }
-
+    
     .navigatior ul {
         width: 100%;
+        height: 100%;
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
+    
+    .navigatior li {
+        margin: 0 30px;
+        height: 100%;
+        font-weight: 700;
+        color: var(--trans-gray);
+
+        /* Transition for hover effect  */
+        transition-property: all;
+        transition-duration: 0.55s;
+        transition-timing-function: ease;
+        /* Align content center */
+        display: flex;
+        align-items: center;
+        /* Keep position of content when hover items */
+        border-top: 5px solid #fff;
+        border-bottom: 5px solid #fff;
+    }
+
+    .navigatior li:hover {
+        border-bottom: 5px solid blue;
+    }
+    
+    .feature-com {
+        display: flex;
+        justify-content: flex-end;
+        width: 20%;
+    }
+
+    
 }
