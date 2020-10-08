@@ -159,7 +159,7 @@ div.feature {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     /* Arrange item */
     display: flex;
     justify-content: center;
@@ -236,7 +236,7 @@ button:hover {
     flex-direction: column;
 }
 
-.service-details .services-text {
+.services-text {
     height: 35vh;
 }
 
@@ -248,7 +248,7 @@ button:hover {
     margin: 1rem 0;
 }
 
-.service-details .service-img {
+.service-img {
     height: 65vh;
     
 }
