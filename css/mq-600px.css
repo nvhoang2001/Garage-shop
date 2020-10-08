@@ -50,7 +50,7 @@
 
     /* Service section */
 
-    .services > .intro{
+    .intro{
         margin-top: 45px;
         margin-bottom: 40px;
         width: 100%;
@@ -63,7 +63,7 @@
         justify-content: space-between;
     }
 
-    .service-details .services-text {
+    .services-text {
         height: 200px;
         padding: 0 30px;
     }
@@ -76,7 +76,7 @@
         font-size: 1rem;
     }
 
-    .service-details .service-img {
+    .service-img {
         height: 400px;
     }
 
