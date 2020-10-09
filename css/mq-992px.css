@@ -271,5 +271,78 @@
         bottom: 8%;
 	}
 	
+	/* Testimonia section */
+	.testimonia {
+		/* Adjust the height */
+		height: 250px;
+		/* Shrink this */
+		margin: 0 10%;
+	}
+
+	/* statistic section */
+	.statistic {
+		/* shrink the distant between backgound image top and the title */
+		padding-top: 13rem;
+	}
+
+	.statistic > div {
+		/* Make thẻ counter align in the center */
+		justify-content: center;
+	}
+
+	.counter {
+		/* Align counters to 1 row */
+		width: 20%;
+	}
 	
+	.counter > figcaption {
+		/* Move the count number to same height with the image */
+		position: relative;
+		top: -0.75rem;
+	}
+
+	/* news section */
+	.news {
+		/* Align the items to center */
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.news > header {
+		/* Make the header take 1 row  */
+		width: 100%;
+	}
+
+	.news > article {
+		/* Make the articles into 1 row */
+		width: 27%;
+		margin: 0 1rem;
+	}
+
+	/* Footer-infor section */
+	.footer-infor {
+		padding: 0 5rem;
+	}
+
+	.footer-contact {
+		/* Change height */
+		min-height: 0;
+		height: 150px;
+		/* Remove the padding */
+		padding: 0;
+		/* Align the items */
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.items {
+		padding: 0 3rem;
+		height: 100%;
+		border-right: 1px solid var(--sp-trans-gray);
+	}
+
+	.items:last-child {
+		border-right: none;
+	}
 }
