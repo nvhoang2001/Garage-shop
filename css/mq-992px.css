@@ -57,8 +57,8 @@
 		margin-left: 30px;
 	}
 
-	.social em.arrow {
-		font-size: 1rem;
+	em.arrow {
+        font-size: 1rem;
 	}
 
 	.header-nav-bar {
@@ -344,5 +344,35 @@
 
 	.items:last-child {
 		border-right: none;
-	}
+    }
+
+    .footer-text > div, .footer-text > nav, .footer-text > address {
+        width: 20%;
+    }
+
+    .slogan > img {
+        margin-top: 0;
+    }
+    
+    .footer-link {
+        padding-left: 100px;
+    }
+
+    .footer-text h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Footer copyright section */
+    .copyright {
+        /* Align content */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* Change padding */
+        padding: 0.75rem 5rem 0.75rem 7.15rem;
+    }
+    
+    .social-footer {
+        margin: 0;
+    }
 }
