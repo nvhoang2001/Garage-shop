@@ -1,7 +1,7 @@
 /* For mobile */
 :root {
     --header-font-color: rgb(105, 105, 105);
-    --backgrond-side-bar: rgb(255, 255, 255);
+    --backgrond-side-bar: #ffffff;
     --social-color: rgb(43, 43, 43);
     --header-image-color: rgb(255, 255, 255);
     --button-color: #5F67FF;
@@ -18,13 +18,10 @@
 }
 
 body {
-    /* format */
+    /* Font format */
     font-size: 1.25rem;
     font-weight: 500;
     font-family: 'Lato', sans-serif;
-    /* arrange */
-    display: flex;
-    flex-flow: column wrap;
 }
 
 
@@ -46,12 +43,12 @@ h3 {
 }
 
 /* Header section*/
-
 #header {
     /* format */
-    margin: 20px 30px;
+    padding: 20px 30px;
     color: var(--header-font-color);
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
+    width: 100%;
     /* arrange */
     display: flex;
     flex-flow: row nowrap;
@@ -59,30 +56,28 @@ h3 {
     align-items: center;
 }
 
-.header-top {
+.header-top, .header-nav-bar {
+    /* Remove header top at mobile */
     display: none;
 }
 
-.navigatior, .feature-com {
-    display: none;
-}
-
-#logo img {
-    max-width: 100%;
+#logo > a, #logo img {
+    /* Make the logo as big as possible */
+    display: inline-block;
+    height: 100%;
 }
 
 #header input[type="checkbox"] {
-    appearance: checkbox;
     display: none;
 }
 
-#header .side-bar-button {
+.side-bar-button {
     /* Formatting */
-    padding: 0.2rem;
+    padding: 3px;
     font-size: 1rem;
     display: inline-block;
     border: 1px solid black;
-    border-radius: 0.2rem;
+    border-radius: 3px;
 }
 
 #header label:hover {
@@ -101,7 +96,7 @@ h3 {
     /* Format */
     background-color: var(--backgrond-side-bar);
     border-right: 1px solid black;
-    padding: 3rem 1.5rem;
+    padding: 35px 25px;
     font-size: 1rem;
     /* Transition */
     transition-property: all;
@@ -124,13 +119,13 @@ div.feature {
     justify-content: center;
 }
 
-.feature a {
-    margin: 0 0.5rem;
+.feature > a {
+    margin: 0 10px;
 }
 
 .menu li > a  {
     display: block;
-    padding: 0.5rem 0;
+    padding: 10px 0;
 }
 
 .schedule svg, .phone svg {
@@ -148,6 +143,8 @@ div.feature {
     padding: 1rem 0.25rem;
     fill: var(--social-color);
 }
+
+/* FLAG FOR NEXT TIME */
 
 /* Header Image section*/
 
